@@ -21,7 +21,7 @@ export const AppControlSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="min-h-screen flex items-center py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Content */}

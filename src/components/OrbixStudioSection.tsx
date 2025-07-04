@@ -26,7 +26,7 @@ export const OrbixStudioSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="min-h-screen flex items-center py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 fade-in">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">

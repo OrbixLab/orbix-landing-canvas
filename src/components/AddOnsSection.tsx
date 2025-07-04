@@ -20,7 +20,7 @@ export const AddOnsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-subtle">
+    <section className="min-h-screen flex items-center py-20 bg-gradient-subtle">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, ShoppingCart, Star, Gamepad2 } from "lucide-react";
 
@@ -34,8 +34,16 @@ export const OrbixMarketSection = () => {
     setCurrentSlide((prev) => (prev - 1 + marketItems.length) % marketItems.length);
   };
 
+  // Auto-play functionality
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % marketItems.length);
+    }, 4500);
+    return () => clearInterval(interval);
+  }, [marketItems.length]);
+
   return (
-    <section className="py-20 bg-gradient-subtle">
+    <section className="min-h-screen flex items-center py-20 bg-gradient-subtle">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">

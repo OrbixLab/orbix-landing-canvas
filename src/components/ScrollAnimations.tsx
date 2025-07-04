@@ -11,12 +11,12 @@ export const ScrollAnimations = () => {
     };
 
     const observer = new IntersectionObserver(observerCallback, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
+      threshold: 0.2,
+      rootMargin: '0px 0px -100px 0px'
     });
 
     // Observe all elements with animation classes
-    const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right');
+    const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in, .slide-up');
     animatedElements.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();

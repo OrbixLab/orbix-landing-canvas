@@ -4,10 +4,13 @@ import { Moon, Sun } from "lucide-react";
 import orbixLogo from "@/assets/orbix-logo.png";
 
 export const Header = () => {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
+    // Set dark mode as default
+    document.documentElement.classList.add('dark');
+    
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
