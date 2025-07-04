@@ -1,13 +1,34 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Header } from "@/components/Header";
+import { HeroSection } from "@/components/HeroSection";
+import { ModularitySection } from "@/components/ModularitySection";
+import { MultiGameSection } from "@/components/MultiGameSection";
+import { AddOnsSection } from "@/components/AddOnsSection";
+import { AppControlSection } from "@/components/AppControlSection";
+import { OrbixMarketSection } from "@/components/OrbixMarketSection";
+import { OrbixStudioSection } from "@/components/OrbixStudioSection";
+import { AboutSection } from "@/components/AboutSection";
+import { ContactSection } from "@/components/ContactSection";
+import { Footer } from "@/components/Footer";
+import { ScrollAnimations } from "@/components/ScrollAnimations";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <ScrollAnimations />
+      <Header />
+      <main>
+        <HeroSection />
+        <ModularitySection />
+        <MultiGameSection />
+        <AddOnsSection />
+        <AppControlSection />
+        <OrbixMarketSection />
+        <OrbixStudioSection />
+        <AboutSection />
+        <ContactSection />
+      </main>
+      <Footer />
+    </>
   );
 };
 
