@@ -18,27 +18,27 @@ export const HeroSection = () => {
       <div className="hero-overlay"></div>
       
       {/* Content */}
-      <div className="relative z-20 text-center text-white max-w-4xl mx-auto px-6">
+      <div className="relative z-20 text-center text-white max-w-4xl mx-auto px-4 md:px-6">
         <div className="fade-in">
           <img 
             src={orbixLogo} 
             alt="Orbix" 
-            className="h-24 w-24 mx-auto mb-8 animate-float"
+            className="h-16 md:h-24 w-16 md:w-24 mx-auto mb-6 md:mb-8 animate-float"
           />
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight px-2">
             One board to
             <span className="bg-gradient-secondary bg-clip-text text-transparent">
               {" "}rule them all
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl mb-12 text-gray-200 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl lg:text-2xl mb-8 md:mb-12 text-gray-200 max-w-2xl mx-auto px-4">
             Experience the future of board gaming with Orbix - the revolutionary 
             modular platform that transforms any game night
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center px-4">
             <Button variant="cta" size="xl" className="w-full sm:w-auto">
               Pre-order Now
             </Button>

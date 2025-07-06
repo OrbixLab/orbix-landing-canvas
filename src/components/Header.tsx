@@ -31,7 +31,7 @@ export const Header = () => {
           : 'bg-transparent'
       }`}
     >
-      <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
+      <nav className="container mx-auto px-4 md:px-6 py-3 md:py-4 flex items-center justify-between">
         <div 
           className="flex items-center space-x-3 cursor-pointer"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
@@ -41,10 +41,10 @@ export const Header = () => {
             alt="Orbix Logo" 
             className="h-8 w-8 animate-float"
           />
-          <span className="text-xl font-bold text-foreground">Orbix</span>
+          <span className="text-lg md:text-xl font-bold text-foreground">Orbix</span>
         </div>
         
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden lg:flex items-center space-x-8">
           <a href="#modularity" className="text-muted-foreground hover:text-foreground transition-smooth">
             Features
           </a>
@@ -56,7 +56,7 @@ export const Header = () => {
           </a>
         </div>
 
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center space-x-2 md:space-x-3">
           <Button
             variant="ghost"
             size="icon"

@@ -37,13 +37,13 @@ export const ModularitySection = () => {
   }, [slides.length]);
 
   return (
-    <section id="modularity" className="min-h-screen flex items-center py-20 bg-gradient-subtle">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16 fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+    <section id="modularity" className="min-h-screen flex items-center py-12 md:py-20 bg-gradient-subtle">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="text-center mb-12 md:mb-16 fade-in">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-foreground">
             Modularity
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
             Build your perfect gaming setup with our revolutionary modular system. 
             Each module adds new dimensions to your gameplay.
           </p>
@@ -61,7 +61,7 @@ export const ModularitySection = () => {
                   <img 
                     src={slide.image} 
                     alt={`Modularity ${index + 1}`}
-                    className="w-full h-96 object-cover"
+                    className="w-full h-64 md:h-96 object-cover"
                     loading="lazy"
                   />
                 </div>
@@ -89,8 +89,8 @@ export const ModularitySection = () => {
           </div>
 
           {/* Caption */}
-          <div className="text-center mt-8">
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <div className="text-center mt-6 md:mt-8">
+            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
               {slides[currentSlide].caption}
             </p>
           </div>
