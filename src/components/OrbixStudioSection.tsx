@@ -79,66 +79,6 @@ export const OrbixStudioSection = () => {
             </div>
           </div>
         </div>
-
-        {/* Studio Screenshots Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 fade-in">
-          <div className="relative group overflow-hidden rounded-xl">
-            <img 
-              src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop" 
-              alt="Game Designer Interface"
-              className="w-full h-64 object-cover transition-smooth group-hover:scale-110"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-smooth"></div>
-            <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-smooth">
-              <h3 className="font-semibold">Game Designer</h3>
-              <p className="text-sm text-gray-200">Visual game board creation</p>
-            </div>
-          </div>
-
-          <div className="relative group overflow-hidden rounded-xl">
-            <img 
-              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" 
-              alt="Rule Builder Interface"
-              className="w-full h-64 object-cover transition-smooth group-hover:scale-110"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-smooth"></div>
-            <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-smooth">
-              <h3 className="font-semibold">Rule Builder</h3>
-              <p className="text-sm text-gray-200">Intuitive logic creation</p>
-            </div>
-          </div>
-
-          <div className="relative group overflow-hidden rounded-xl md:col-span-2 lg:col-span-1">
-            <img 
-              src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop" 
-              alt="Playtesting Dashboard"
-              className="w-full h-64 object-cover transition-smooth group-hover:scale-110"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-smooth"></div>
-            <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-smooth">
-              <h3 className="font-semibold">Playtesting</h3>
-              <p className="text-sm text-gray-200">Real-time game analytics</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="text-center mt-16 fade-in">
-          <div className="bg-gradient-secondary/10 rounded-2xl p-8 border border-secondary/20">
-            <h3 className="text-2xl font-semibold mb-4 text-foreground">
-              Join the Creator Beta
-            </h3>
-            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Be among the first to access Orbix Studio and start creating your dream board games. 
-              Early access includes premium features and direct feedback from our development team.
-            </p>
-            <Button variant="cta" size="lg">
-              Request Beta Access
-            </Button>
-          </div>
-        </div>
       </div>
     </section>
   );

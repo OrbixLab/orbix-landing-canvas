@@ -43,13 +43,13 @@ export const OrbixMarketSection = () => {
   }, [marketItems.length]);
 
   return (
-    <section className="min-h-screen flex items-center py-20 bg-gradient-subtle">
+    <section className="h-screen flex items-center py-12 bg-gradient-subtle">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16 fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+        <div className="text-center mb-8 fade-in">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
             Orbix Market
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Buy third-party games, add-ons, and accessories. Discover new gaming 
             experiences from independent creators and major publishers worldwide.
           </p>
@@ -57,7 +57,7 @@ export const OrbixMarketSection = () => {
 
         <div className="max-w-4xl mx-auto slide-in-right">
           {/* Featured Items Carousel */}
-          <div className="relative overflow-hidden rounded-2xl shadow-elegant mb-8">
+          <div className="relative overflow-hidden rounded-2xl shadow-elegant mb-6">
             <div 
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -67,16 +67,16 @@ export const OrbixMarketSection = () => {
                   <img 
                     src={item.image} 
                     alt={item.title}
-                    className="w-full h-80 object-cover"
+                    className="w-full h-48 md:h-56 object-cover"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                  <div className="absolute bottom-6 left-6 text-white">
-                    <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                     <div className="flex items-center space-x-4">
-                      <span className="text-3xl font-bold text-accent">{item.price}</span>
+                      <span className="text-2xl font-bold text-accent">{item.price}</span>
                       <div className="flex items-center space-x-1">
-                        <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                         <span className="text-sm">{item.rating}</span>
                       </div>
                     </div>
@@ -106,7 +106,7 @@ export const OrbixMarketSection = () => {
           </div>
 
           {/* Dots indicator */}
-          <div className="flex justify-center space-x-3 mb-12">
+          <div className="flex justify-center space-x-3 mb-8">
             {marketItems.map((_, index) => (
               <button
                 key={index}
