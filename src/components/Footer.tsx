@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Twitter, Linkedin, Mail, Heart } from "lucide-react";
-import orbixLogo from "@/assets/orbix-logo.png";
+import orbixLogo from "@/assets/logo3.png";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();

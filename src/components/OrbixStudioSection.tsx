@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Code, Palette, Share2, Zap } from "lucide-react";
+import img1 from "@/assets/studio1.jpeg";
 
 export const OrbixStudioSection = () => {
   const features = [
@@ -46,7 +47,7 @@ export const OrbixStudioSection = () => {
           <div className="slide-in-left">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop" 
+                src={img1}
                 alt="Orbix Studio Interface"
                 className="w-full rounded-2xl shadow-elegant"
                 loading="lazy"

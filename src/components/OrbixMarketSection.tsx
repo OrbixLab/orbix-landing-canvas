@@ -1,25 +1,28 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, ShoppingCart, Star, Gamepad2 } from "lucide-react";
+import img1 from "@/assets/Orbix.113.png";
+import img2 from "@/assets/Orbix.113.png";
+import img3 from "@/assets/Orbix.113.png";
 
 export const OrbixMarketSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
   const marketItems = [
     {
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&h=400&fit=crop",
+      image: img1,
       title: "Adventure Quest Pack",
       price: "$19.99",
       rating: 4.8
     },
     {
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop",
+      image: img2,
       title: "Strategy Master Collection",
       price: "$24.99",
       rating: 4.9
     },
     {
-      image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=600&h=400&fit=crop",
+      image: img3,
       title: "Party Games Mega Pack",
       price: "$14.99",
       rating: 4.7

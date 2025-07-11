@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Moon, Sun } from "lucide-react";
-import orbixLogo from "@/assets/orbix-logo.png";
+import orbixLogo from "@/assets/logo3.png";
 
 export const Header = () => {
   const [isDark, setIsDark] = useState(true);

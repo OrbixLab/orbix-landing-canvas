@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
-import mobileMockup from "@/assets/mobile-mockup.png";
-import { Smartphone, Bluetooth, Download, Settings } from "lucide-react";
+import img1 from "@/assets/app1.png";
+import img2 from "@/assets/app2.png";
+import img3 from "@/assets/app3.png";
+import img4 from "@/assets/app4.png";
+import { Bluetooth, Download, Settings } from "lucide-react";
 
 export const AppControlSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -23,10 +26,10 @@ export const AppControlSection = () => {
   ];
 
   const controlImages = [
-    "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=300&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=300&h=400&fit=crop", 
-    "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=300&h=400&fit=crop",
-    mobileMockup
+    img1,
+    img2,
+    img3,
+    img4,
   ];
 
   // Auto-play functionality

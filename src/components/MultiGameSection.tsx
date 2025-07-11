@@ -1,22 +1,27 @@
+import img1 from "@/assets/Orbix.91.png";
+import img2 from "@/assets/Render1.jpeg";
+import img3 from "@/assets/Orbix.113.png";
+import img4 from "@/assets/board1.jpeg";
+
 export const MultiGameSection = () => {
   const gameSetups = [
     {
-      image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400&h=300&fit=crop",
+      image: img1,
       title: "Strategy Games",
       description: "Complex tactical gameplay"
     },
     {
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+      image: img2,
       title: "Party Games", 
       description: "Fun for everyone"
     },
     {
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=300&fit=crop",
+      image: img3,
       title: "Adventure Games",
       description: "Epic storytelling experiences"
     },
     {
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop",
+      image: img4,
       title: "Classic Games",
       description: "Timeless board game favorites"
     }

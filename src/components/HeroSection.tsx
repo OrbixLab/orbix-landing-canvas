@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroBackground from "@/assets/hero-bg.jpg";
+import heroBackground from "@/assets/Diseño sin título.mp4";
 import orbixLogo from "@/assets/orbix-logo.png";
 
 export const HeroSection = () => {
@@ -7,10 +7,12 @@ export const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Video (using image as fallback) */}
       <div className="hero-video">
-        <img 
+        <video 
           src={heroBackground} 
-          alt="Orbix Hero Background" 
           className="w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
         />
       </div>
       

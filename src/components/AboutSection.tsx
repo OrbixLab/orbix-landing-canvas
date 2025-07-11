@@ -1,5 +1,5 @@
-import gonzaloPhoto from "@/assets/gonzalo-photo.jpg";
-import juanPhoto from "@/assets/juan-photo.jpg";
+import gonzaloPhoto from "@/assets/gonza.jpg";
+import juanPhoto from "@/assets/Juan.jpg";
 import { Linkedin, Twitter } from "lucide-react";
 
 export const AboutSection = () => {

@@ -1,21 +1,24 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import image1 from "../assets/board1.jpeg"
+import image2 from "../assets/Orbix.113.png"
+import image3 from "../assets/board2.jpg"
 
 export const ModularitySection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
   const slides = [
     {
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
+      image: image1,
       caption: "Expand the board with extra modules for endless gaming possibilities"
     },
     {
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop",
+      image: image2,
       caption: "Connect multiple boards to create massive multiplayer experiences"
     },
     {
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
+      image: image3,
       caption: "Seamless integration with digital components and physical gameplay"
     }
   ];
