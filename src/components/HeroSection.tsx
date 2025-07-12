@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import heroBackground from "@/assets/Diseño sin título.mp4";
-import orbixLogo from "@/assets/orbix-logo.png";
 
 export const HeroSection = () => {
   return (
