@@ -79,18 +79,18 @@ export const AppControlSection = () => {
           </div>
 
           {/* Image Carousel */}
-          <div className="slide-in-right">
-            <div className="relative overflow-hidden rounded-2xl shadow-elegant">
+          <div className="slide-in-right w-full">
+            <div className="relative overflow-hidden rounded-2xl shadow-elegant max-w-full w-full">
               <div 
-                className="flex transition-transform duration-500 ease-in-out"
+                className="flex transition-transform duration-500 ease-in-out w-full"
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
               >
                 {controlImages.map((image, index) => (
-                  <div key={index} className="w-full flex-shrink-0">
+                  <div key={index} className="w-full flex-shrink-0 min-w-0">
                     <img 
                       src={image} 
                       alt={`Control Interface ${index + 1}`}
-                      className="w-full h-80 object-cover"
+                      className="w-full h-80 object-contain max-w-full"
                       loading="lazy"
                     />
                   </div>
