@@ -46,7 +46,7 @@ export const OrbixMarketSection = () => {
   }, [marketItems.length]);
 
   return (
-    <section className="h-screen flex items-center py-12 bg-gradient-subtle">
+    <section className="min-h-screen flex items-center py-16 md:py-20 bg-gradient-subtle">
       <div className="container mx-auto px-6">
         <div className="text-center mb-8 fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
