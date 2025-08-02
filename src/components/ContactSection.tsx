@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, MessageSquare, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { NewsletterSignup } from "./NewsletterSignup";
 
 export const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -124,7 +125,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1 text-sm md:text-base">Email</h4>
-                    <p className="text-sm md:text-base text-muted-foreground">hello@orbix.com</p>
+                    <p className="text-sm md:text-base text-muted-foreground">support@orbixboard.com</p>
                   </div>
                 </div>
 
@@ -138,22 +139,7 @@ export const ContactSection = () => {
                   </div>
                 </div>
               </div>
-
-              <div className="bg-gradient-subtle rounded-2xl p-4 md:p-6 border border-border">
-                <h4 className="font-semibold text-foreground mb-2 md:mb-3 text-sm md:text-base">Newsletter</h4>
-                <p className="text-sm md:text-base text-muted-foreground mb-3 md:mb-4">
-                  Stay updated with the latest Orbix news and development updates.
-                </p>
-                <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-3">
-                  <Input 
-                    placeholder="Enter your email" 
-                    className="flex-1 text-sm"
-                  />
-                  <Button variant="cta" size="sm" className="text-sm">
-                    Subscribe
-                  </Button>
-                </div>
-              </div>
+              <NewsletterSignup />
             </div>
           </div>
         </div>
