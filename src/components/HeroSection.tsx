@@ -34,17 +34,7 @@ export const HeroSection = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center px-4">
             <Button variant="cta" size="xl" className="w-full sm:w-auto">
-              Pre-order Now
-            </Button>
-            <Button 
-              variant="support" 
-              size="xl" 
-              className="w-full sm:w-auto"
-              asChild
-            >
-              <a href="https://patreon.com/orbix" target="_blank" rel="noopener noreferrer">
-                Support Us
-              </a>
+              Join Us
             </Button>
           </div>
         </div>

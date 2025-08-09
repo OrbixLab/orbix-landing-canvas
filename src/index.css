@@ -8,7 +8,7 @@
   :root {
     /* Primary (60%) - Clean neutrals for large backgrounds */
     --background: 0 0% 100%;
-    --foreground: 225 15% 15%;
+    --foreground: 222.2 47.4% 11.2%;
     
     /* Secondary (30%) - Deep space blue for highlights */
     --primary: 230 45% 25%;
@@ -27,11 +27,11 @@
 
     /* Supporting colors */
     --card: 0 0% 100%;
-    --card-foreground: 225 15% 15%;
+    --card-foreground: 222.2 47.4% 11.2%;
     --muted: 220 14% 96%;
-    --muted-foreground: 220 9% 46%;
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
+    --muted-foreground: 220 10% 35%;
+    --border: 220 14% 86%;
+    --input: 220 14% 86%;
     --ring: 230 45% 25%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
@@ -111,7 +111,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground font-sans antialiased leading-relaxed;
   }
   
   html {
