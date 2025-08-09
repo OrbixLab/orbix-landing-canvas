@@ -5,7 +5,7 @@ import { FeaturesWithImagesSection } from "@/components/FeaturesWithImagesSectio
 import { KickstarterSoonSection } from "@/components/KickstarterSoonSection";
 import { MarketPromoSection } from "@/components/MarketPromoSection";
 import { OrbixStudioShowcaseSection } from "@/components/OrbixStudioShowcaseSection";
-import { VideoSection } from "@/components/VideoSection";
+
 import { AboutSection } from "@/components/AboutSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
@@ -23,7 +23,7 @@ const Index = () => {
         <KickstarterSoonSection />
         <MarketPromoSection />
         <OrbixStudioShowcaseSection />
-        <VideoSection />
+        
         <AboutSection />
         <ContactSection />
       </main>
