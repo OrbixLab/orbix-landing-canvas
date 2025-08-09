@@ -1,11 +1,11 @@
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
-import { ModularitySection } from "@/components/ModularitySection";
-import { MultiGameSection } from "@/components/MultiGameSection";
-import { AddOnsSection } from "@/components/AddOnsSection";
-import { AppControlSection } from "@/components/AppControlSection";
-import { OrbixMarketSection } from "@/components/OrbixMarketSection";
-import { OrbixStudioSection } from "@/components/OrbixStudioSection";
+import { SmartBoardIntroSection } from "@/components/SmartBoardIntroSection";
+import { FeaturesWithImagesSection } from "@/components/FeaturesWithImagesSection";
+import { KickstarterSoonSection } from "@/components/KickstarterSoonSection";
+import { MarketPromoSection } from "@/components/MarketPromoSection";
+import { OrbixStudioShowcaseSection } from "@/components/OrbixStudioShowcaseSection";
+import { VideoSection } from "@/components/VideoSection";
 import { AboutSection } from "@/components/AboutSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
@@ -18,12 +18,12 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
-        <ModularitySection />
-        <MultiGameSection />
-        <AddOnsSection />
-        <AppControlSection />
-        <OrbixMarketSection />
-        <OrbixStudioSection />
+        <SmartBoardIntroSection />
+        <FeaturesWithImagesSection />
+        <KickstarterSoonSection />
+        <MarketPromoSection />
+        <OrbixStudioShowcaseSection />
+        <VideoSection />
         <AboutSection />
         <ContactSection />
       </main>

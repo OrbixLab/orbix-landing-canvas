@@ -67,7 +67,7 @@ export const Header = () => {
           </Button>
           
           <Button variant="cta" size="sm" className="hidden sm:inline-flex">
-            Pre-order
+            Join Us
           </Button>
         </div>
       </nav>
