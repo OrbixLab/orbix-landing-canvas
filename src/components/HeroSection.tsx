@@ -20,14 +20,14 @@ export const HeroSection = () => {
       {/* Content */}
       <div className="relative z-20 text-center text-white max-w-4xl mx-auto px-4 md:px-6">
         <div className="fade-in">
-          <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight px-2">
+          <h1 className="text-3xl md:text-5xl lg:text-7xl font-extrabold mb-6 md:mb-8 leading-tight px-2 text-shadow-sm">
             One board to
             <span className="bg-gradient-secondary bg-clip-text text-transparent">
               {" "}rule them all
             </span>
           </h1>
           
-          <p className="text-lg md:text-xl lg:text-2xl mb-8 md:mb-12 text-gray-200 max-w-2xl mx-auto px-4">
+          <p className="text-lg md:text-xl lg:text-2xl mb-8 md:mb-12 text-white/90 text-shadow-sm max-w-2xl mx-auto px-4">
             Experience the future of board gaming with Orbix - the revolutionary 
             modular platform that transforms any game night
           </p>

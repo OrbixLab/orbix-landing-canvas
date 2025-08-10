@@ -17,19 +17,19 @@
     
     /* Accent (10%) - Electric purple for CTAs */
     --secondary: 270 80% 60%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary-foreground: 240 10% 10%;
     --secondary-glow: 270 90% 70%;
     
     /* Orange accent for special CTAs */
     --accent: 25 95% 55%;
-    --accent-foreground: 0 0% 100%;
+    --accent-foreground: 240 10% 10%;
     --accent-glow: 25 100% 65%;
 
     /* Supporting colors */
     --card: 0 0% 100%;
     --card-foreground: 222.2 47.4% 11.2%;
     --muted: 220 14% 96%;
-    --muted-foreground: 220 10% 35%;
+    --muted-foreground: 220 10% 30%;
     --border: 220 14% 86%;
     --input: 220 14% 86%;
     --ring: 230 45% 25%;
@@ -126,7 +126,7 @@
   }
   
   .hero-overlay {
-    @apply absolute inset-0 bg-black/40 z-10;
+    @apply absolute inset-0 bg-black/60 z-10;
   }
   
   /* Gradient backgrounds */
@@ -153,6 +153,11 @@
   
   .shadow-accent {
     box-shadow: var(--shadow-accent);
+  }
+
+  /* Subtle text shadow for readability over images/gradients */
+  .text-shadow-sm {
+    text-shadow: 0 1px 2px hsl(0 0% 0% / 0.25);
   }
   
   /* Smooth transitions */
