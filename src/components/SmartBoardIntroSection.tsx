@@ -1,6 +1,6 @@
 export const SmartBoardIntroSection = () => {
   return (
-    <section id="smart-intro" className="py-16 md:py-24 bg-background">
+    <section id="smart-intro" className="py-16 md:py-24 bg-muted/30">
       <div className="container mx-auto px-4 md:px-6 max-w-4xl">
         <h2 className="sr-only">About the Orbix Smart Board</h2>
         <div className="space-y-4 md:space-y-5 text-center fade-in">
