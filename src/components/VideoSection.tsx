@@ -1,9 +1,9 @@
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export const VideoSection = () => {
-  const videoId = "VIDEO_ID"; // TODO: Replace with your YouTube video ID
+  const videoId = "dQw4w9WgXcQ"; // Replace with your actual YouTube video ID
   return (
-    <section id="video" className="py-16 md:py-24 bg-gradient-subtle">
+    <section id="video" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-5xl mx-auto bg-card border border-border rounded-2xl shadow-elegant overflow-hidden fade-in">
           <AspectRatio ratio={16 / 9}>
