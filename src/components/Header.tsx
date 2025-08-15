@@ -51,6 +51,16 @@ export const Header = () => {
             Features
           </a>
           <a 
+            href="#faq" 
+            className="text-muted-foreground hover:text-foreground transition-smooth"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
+            FAQ
+          </a>
+          <a 
             href="#about" 
             className="text-muted-foreground hover:text-foreground transition-smooth"
             onClick={(e) => {
