@@ -8,20 +8,18 @@ export const AboutSection = () => {
       name: "Gonzalo López Di Paola",
       title: "CEO & Founder",
       photo: gonzaloPhoto,
-      bio: "Passionate game designer with 15+ years in the industry. Former lead designer at major gaming studios, now revolutionizing board gaming with cutting-edge technology.",
+      bio: "Electronic Engineer with experience leading product development for hard-tech industries.",
       social: {
-        linkedin: "#",
-        twitter: "#"
+        linkedin: "https://www.linkedin.com/in/gonzalo-a-lopez-di-paola-099576213/",
       }
     },
     {
       name: "Juan Gabriel Losada",
       title: "CTO & Co-Founder", 
       photo: juanPhoto,
-      bio: "Tech innovator specializing in IoT and AI systems. Previously architected smart device platforms for Fortune 500 companies, bringing expertise to gaming hardware.",
+      bio: "Systems Engineer with a background in developing entertainment platforms.",
       social: {
-        linkedin: "#",
-        twitter: "#"
+        linkedin: "https://www.linkedin.com/in/juan-gabriel-losada-631005367/",
       }
     }
   ];
@@ -34,8 +32,7 @@ export const AboutSection = () => {
             About Us
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
-            We're a team of passionate innovators dedicated to transforming the board gaming 
-            experience through cutting-edge technology and thoughtful design.
+            We're a team of passionate board-game enthusiasts, video-game developers, and experts in crafting interactive experiences.
           </p>
         </div>
 
@@ -70,15 +67,17 @@ export const AboutSection = () => {
                     <a 
                       href={member.social.linkedin}
                       className="w-8 md:w-10 h-8 md:h-10 bg-gradient-secondary rounded-full flex items-center justify-center hover:scale-110 transition-bounce"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <Linkedin className="h-4 md:h-5 w-4 md:w-5 text-secondary-foreground" />
                     </a>
-                    <a 
+                    {/* <a 
                       href={member.social.twitter}
                       className="w-8 md:w-10 h-8 md:h-10 bg-gradient-accent rounded-full flex items-center justify-center hover:scale-110 transition-bounce"
                     >
                       <Twitter className="h-4 md:h-5 w-4 md:w-5 text-accent-foreground" />
-                    </a>
+                    </a> */}
                   </div>
                 </div>
                 
