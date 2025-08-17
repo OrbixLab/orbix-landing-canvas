@@ -1,5 +1,4 @@
-import mobileMock from "@/assets/mobile-mockup.png";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/orbix-studio.jpeg";
 
 export const OrbixStudioShowcaseSection = () => {
   return (
@@ -23,10 +22,14 @@ export const OrbixStudioShowcaseSection = () => {
           <div className="space-y-4 text-muted-foreground slide-in-right">
             <p className="text-base md:text-lg">Design, test, and iterate your ideas visually.</p>
             <p className="text-base md:text-lg">Publish to the market and reach players instantly.</p>
+            <ul className="list-disc list-inside space-y-3 text-base md:text-lg text-muted-foreground">
+              <li>No-code AI assistant</li>
+              <li>Publish it in our market and sell or share your creation</li>
+            </ul>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center mt-10 md:mt-14">
+        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center mt-10 md:mt-14">
           <figure className="bg-card rounded-2xl overflow-hidden border border-border shadow-elegant order-2 lg:order-1 slide-in-right">
             <img
               src={mobileMock}
@@ -42,7 +45,7 @@ export const OrbixStudioShowcaseSection = () => {
               <li>No-code AI assistant</li>
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

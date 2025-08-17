@@ -1,3 +1,5 @@
+import marketImage from "@/assets/orbix-market.jpeg";
+
 export const MarketPromoSection = () => {
   return (
     <section id="market-promo" className="py-16 md:py-24 bg-gray-100/5">
@@ -11,7 +13,7 @@ export const MarketPromoSection = () => {
           <div className="slide-in-left">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=600&h=400&fit=crop" 
+                src={marketImage}
                 alt="Digital Marketplace showcasing various board games"
                 className="w-full rounded-2xl shadow-elegant"
                 loading="lazy"
