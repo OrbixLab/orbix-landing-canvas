@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Moon, Sun } from "lucide-react";
-import orbixLogo from "@/assets/logo3.png";
+import orbixLogo from "@/assets/orbix-logo.png";
+import { JoinUsModal } from "@/components/JoinUsModal";
 
 export const Header = () => {
-  const [isDark, setIsDark] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
-    // Set dark mode as default
+    // Set dark mode as default and permanent
     document.documentElement.classList.add('dark');
     
     const handleScroll = () => {
@@ -17,11 +17,6 @@ export const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const toggleTheme = () => {
-    setIsDark(!isDark);
-    document.documentElement.classList.toggle('dark');
-  };
 
   return (
     <header 
@@ -45,32 +40,61 @@ export const Header = () => {
         </div>
         
         <div className="hidden lg:flex items-center space-x-8">
-          <a href="#modularity" className="text-muted-foreground hover:text-foreground transition-smooth">
+          <a 
+            href="#smart-intro" 
+            className="text-muted-foreground hover:text-foreground transition-smooth"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('smart-intro')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             Features
           </a>
-          <a href="#about" className="text-muted-foreground hover:text-foreground transition-smooth">
+          <a 
+            href="#faq" 
+            className="text-muted-foreground hover:text-foreground transition-smooth"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
+            FAQ
+          </a>
+          <a 
+            href="#about" 
+            className="text-muted-foreground hover:text-foreground transition-smooth"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             About
           </a>
-          <a href="#contact" className="text-muted-foreground hover:text-foreground transition-smooth">
+          <a 
+            href="#contact" 
+            className="text-muted-foreground hover:text-foreground transition-smooth"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             Contact
           </a>
         </div>
 
         <div className="flex items-center space-x-2 md:space-x-3">
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={toggleTheme}
-            className="hover:bg-muted"
+          <Button 
+            variant="cta" 
+            size="sm" 
+            className="hidden sm:inline-flex"
+            onClick={() => setIsModalOpen(true)}
           >
-            {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-          </Button>
-          
-          <Button variant="cta" size="sm" className="hidden sm:inline-flex">
-            Pre-order
+            Join Us
           </Button>
         </div>
       </nav>
+      
+      <JoinUsModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </header>
   );
 };
