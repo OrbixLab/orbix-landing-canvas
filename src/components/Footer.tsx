@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Twitter, Linkedin, Mail, Heart } from "lucide-react";
+import { Linkedin, Mail, Heart } from "lucide-react";
 import orbixLogo from "@/assets/logo3.png";
 
 export const Footer = () => {
@@ -24,7 +24,7 @@ export const Footer = () => {
               One board to rule them all.
             </p>
             <div className="flex space-x-4">
-              <Button
+              {/* <Button
                 variant="ghost"
                 size="icon"
                 className="hover:bg-primary-foreground/10"
@@ -33,14 +33,19 @@ export const Footer = () => {
                 <a href="#" aria-label="Twitter">
                   <Twitter className="h-5 w-5" />
                 </a>
-              </Button>
+              </Button> */}
               <Button
                 variant="ghost"
                 size="icon"
                 className="hover:bg-primary-foreground/10"
                 asChild
               >
-                <a href="#" aria-label="LinkedIn">
+                <a 
+                  href="https://www.linkedin.com/in/orbix-board-5a8775375/" 
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>
@@ -50,7 +55,7 @@ export const Footer = () => {
                 className="hover:bg-primary-foreground/10"
                 asChild
               >
-                <a href="mailto:hello@orbix.com" aria-label="Email">
+                <a href="mailto:support@orbixboard.com" aria-label="Email">
                   <Mail className="h-5 w-5" />
                 </a>
               </Button>
@@ -63,8 +68,8 @@ export const Footer = () => {
             <ul className="space-y-2 text-primary-foreground/80">
               <li><a href="#modularity" className="hover:text-primary-foreground transition-smooth">Features</a></li>
               <li><a href="#" className="hover:text-primary-foreground transition-smooth">Specifications</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-smooth">Pricing</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-smooth">Pre-order</a></li>
+              {/* <li><a href="#" className="hover:text-primary-foreground transition-smooth">Pricing</a></li>
+              <li><a href="#" className="hover:text-primary-foreground transition-smooth">Pre-order</a></li> */}
             </ul>
           </div>
 
@@ -73,9 +78,9 @@ export const Footer = () => {
             <h3 className="font-semibold mb-4">Support</h3>
             <ul className="space-y-2 text-primary-foreground/80">
               <li><a href="#contact" className="hover:text-primary-foreground transition-smooth">Contact</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-smooth">FAQ</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-smooth">Documentation</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-smooth">Community</a></li>
+              <li><a href="#faq" className="hover:text-primary-foreground transition-smooth">FAQ</a></li>
+              {/* <li><a href="#" className="hover:text-primary-foreground transition-smooth">Documentation</a></li>
+              <li><a href="#" className="hover:text-primary-foreground transition-smooth">Community</a></li> */}
             </ul>
           </div>
         </div>
