@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import orbixLogo from "@/assets/orbix-logo.png";
+import orbixLogo from "@/assets/logo3.png";
 import { JoinUsModal } from "@/components/JoinUsModal";
 
 export const Header = () => {

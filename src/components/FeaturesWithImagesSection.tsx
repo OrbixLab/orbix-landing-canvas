@@ -1,5 +1,5 @@
-import heroBg from "@/assets/hero-bg.jpg";
-import mobileMockup from "@/assets/mobile-mockup.png";
+import heroBg from "@/assets/Orbix.113.png";
+import mobileMockup from "@/assets/Orbix.93.png";
 import { Wifi, Lightbulb, Boxes, Scan } from "lucide-react";
 import {
   Carousel,
@@ -18,17 +18,13 @@ export const FeaturesWithImagesSection = () => {
 
   const images = [
     {
-      src: heroBg,
-      alt: "Orbix board illuminated with RGB LEDs"
-    },
-    {
       src: mobileMockup,
       alt: "Orbix mobile app interface"
     },
     {
       src: heroBg,
-      alt: "Orbix modular gaming pieces"
-    }
+      alt: "Orbix board illuminated with RGB LEDs"
+    },
   ];
 
   return (

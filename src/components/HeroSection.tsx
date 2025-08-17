@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import heroBackground from "@/assets/Diseño sin título.mp4";
+/* import heroBackground from "@/assets/Diseño sin título.mp4"; */
+import heroBackground from "@/assets/Completo.mp4";
 
 export const HeroSection = () => {
   return (
