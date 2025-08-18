@@ -66,8 +66,8 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Product</h3>
             <ul className="space-y-2 text-primary-foreground/80">
-              <li><a href="#modularity" className="hover:text-primary-foreground transition-smooth">Features</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-smooth">Specifications</a></li>
+              <li><a href="#smart-intro" className="hover:text-primary-foreground transition-smooth">Features</a></li>
+              <li><a href="#features" className="hover:text-primary-foreground transition-smooth">Specifications</a></li>
               {/* <li><a href="#" className="hover:text-primary-foreground transition-smooth">Pricing</a></li>
               <li><a href="#" className="hover:text-primary-foreground transition-smooth">Pre-order</a></li> */}
             </ul>
